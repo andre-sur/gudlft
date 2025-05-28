@@ -1,0 +1,25 @@
+test_purchase_places_insufficient_competition_slots (test_int_booking_competition_limit.IntegrationTestCase.test_purchase_places_insufficient_competition_slots) ... ok
+test_purchase_places_success (test_int_booking_ok.IntegrationTestCase.test_purchase_places_success) ... ok
+test_purchase_places_insufficient_points (test_int_insufficient_booking.IntegrationTestCase.test_purchase_places_insufficient_points) ... ok
+test_purchase_places_invalid_club_or_competition (test_int_invalid_booking.IntegrationTestCase.test_purchase_places_invalid_club_or_competition) ... ok
+test_purchase_places_invalid_number (test_int_invalid_number.IntegrationTestCase.test_purchase_places_invalid_number) ... ok
+test_purchase_places_more_than_12 (test_int_nb_places.IntegrationTestCase.test_purchase_places_more_than_12) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.065s
+
+OK
+
+
+=== Rapport de couverture ===
+Name                                                      Stmts   Miss  Cover   Missing
+---------------------------------------------------------------------------------------
+app.py                                                       79     21    73%   26, 30-38, 42-49, 81-83, 93, 97, 102, 105
+tests\integration\test_int_booking_competition_limit.py       9      0   100%
+tests\integration\test_int_booking_ok.py                     11      1    91%   19
+tests\integration\test_int_insufficient_booking.py            9      0   100%
+tests\integration\test_int_invalid_booking.py                 9      0   100%
+tests\integration\test_int_invalid_number.py                  9      0   100%
+tests\integration\test_int_nb_places.py                       9      0   100%
+---------------------------------------------------------------------------------------
+TOTAL                                                       135     22    84%

@@ -1,0 +1,5 @@
+[2025-05-22 16:57:11,385] BOOK-VRP0CTQ70N/INFO/locust.main: Starting Locust 2.37.5
+[2025-05-22 16:57:11,385] BOOK-VRP0CTQ70N/INFO/locust.main: Starting web interface at http://localhost:8089, press enter to open your default browser.
+[2025-05-22 16:57:19,543] BOOK-VRP0CTQ70N/INFO/locust.runners: Ramping to 10 users at a rate of 3.00 per second
+[2025-05-22 16:57:22,552] BOOK-VRP0CTQ70N/INFO/locust.runners: All users spawned: {"ClubSecretary": 10} (10 total users)
+[2025-05-22 17:02:39,274] BOOK-VRP0CTQ70N/INFO/locust.main: Shutting down (exit code 1)

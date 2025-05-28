@@ -1,0 +1,29 @@
+test_purchase_places_insufficient_competition_slots (test_int_booking_competition_limit.IntegrationTestCase.test_purchase_places_insufficient_competition_slots) ... FAIL
+test_purchase_places_success (test_int_booking_ok.IntegrationTestCase.test_purchase_places_success) ... ok
+test_purchase_places_insufficient_points (test_int_insufficient_booking.IntegrationTestCase.test_purchase_places_insufficient_points) ... FAIL
+test_purchase_places_invalid_club_or_competition (test_int_invalid_booking.IntegrationTestCase.test_purchase_places_invalid_club_or_competition) ... ok
+test_purchase_places_invalid_number (test_int_invalid_number.IntegrationTestCase.test_purchase_places_invalid_number) ... ok
+test_purchase_places_more_than_12 (test_int_nb_places.IntegrationTestCase.test_purchase_places_more_than_12) ... ok
+
+======================================================================
+FAIL: test_purchase_places_insufficient_competition_slots (test_int_booking_competition_limit.IntegrationTestCase.test_purchase_places_insufficient_competition_slots)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\andre\Documents\GUDLFT\Python_Testing\tests\integration\test_int_booking_competition_limit.py", line 16, in test_purchase_places_insufficient_competition_slots
+    self.assertIn("Pas assez de places dans la compétition", response.get_data(as_text=True))
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'Pas assez de places dans la compétition' not found in '<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <title>Summary | GUDLFT Registration</title>\n</head>\n<body>\n        <h2>Welcome, admin@irontemple.com </h2><a href="/logout">Logout</a>\n\n    \n    \n        <ul>\n       \n            <li>Vous n&#39;avez pas assez de points pour cette réservation.</li>\n        \n       </ul>\n    \n    Points available: 4\n    <h3>Competitions:</h3>\n    <ul>\n        \n        <li>\n            Spring Festival<br />\n            Date: 2020-03-27 10:00:00</br>\n            Number of Places: 25\n            \n            <a href="/book/Spring%20Festival/Iron%20Temple">Book Places</a>\n            \n        </li>\n        <hr />\n        \n        <li>\n            Fall Classic<br />\n            Date: 2020-10-22 13:30:00</br>\n            Number of Places: 13\n            \n            <a href="/book/Fall%20Classic/Iron%20Temple">Book Places</a>\n            \n        </li>\n        <hr />\n        \n    </ul>\n    \n\n    <a href="/points">Voir les points des clubs</a>\n\n</body>\n</html>'
+
+======================================================================
+FAIL: test_purchase_places_insufficient_points (test_int_insufficient_booking.IntegrationTestCase.test_purchase_places_insufficient_points)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\andre\Documents\GUDLFT\Python_Testing\tests\integration\test_int_insufficient_booking.py", line 16, in test_purchase_places_insufficient_points
+    self.assertIn("Vous n'avez pas assez de points", response.get_data(as_text=True))
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: "Vous n'avez pas assez de points" not found in '<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <title>Summary | GUDLFT Registration</title>\n</head>\n<body>\n        <h2>Welcome, admin@irontemple.com </h2><a href="/logout">Logout</a>\n\n    \n    \n        <ul>\n       \n            <li>Vous n&#39;avez pas assez de points pour cette réservation.</li>\n        \n       </ul>\n    \n    Points available: 0\n    <h3>Competitions:</h3>\n    <ul>\n        \n        <li>\n            Spring Festival<br />\n            Date: 2020-03-27 10:00:00</br>\n            Number of Places: 25\n            \n            <a href="/book/Spring%20Festival/Iron%20Temple">Book Places</a>\n            \n        </li>\n        <hr />\n        \n        <li>\n            Fall Classic<br />\n            Date: 2020-10-22 13:30:00</br>\n            Number of Places: 9\n            \n            <a href="/book/Fall%20Classic/Iron%20Temple">Book Places</a>\n            \n        </li>\n        <hr />\n        \n    </ul>\n    \n\n    <a href="/points">Voir les points des clubs</a>\n\n</body>\n</html>'
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.018s
+
+FAILED (failures=2)

@@ -1,0 +1,28 @@
+test_error_counter_increments (test_error_counter.TestErrorCounter.test_error_counter_increments) ... ok
+test_load_clubs_returns_list (test_load_clubs.TestLoadClubs.test_load_clubs_returns_list) ... ok
+test_load_competitions_returns_list (test_load_competitions.TestLoadCompetitions.test_load_competitions_returns_list) ... ok
+test_purchase_places_not_enough_points (test_purchase_places_logic.TestPurchasePlaces.test_purchase_places_not_enough_points) ... ok
+test_purchase_places_too_many (test_purchase_places_logic.TestPurchasePlaces.test_purchase_places_too_many) ... ok
+test_book_invalid_club (test_routes_book.TestBookRoute.test_book_invalid_club) ... ok
+test_book_valid (test_routes_book.TestBookRoute.test_book_valid) ... ok
+test_show_summary_invalid_email (test_routes_show_summary.TestShowSummary.test_show_summary_invalid_email) ... ok
+test_show_summary_valid_email (test_routes_show_summary.TestShowSummary.test_show_summary_valid_email) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.056s
+
+OK
+
+
+=== Rapport de couverture ===
+Name                                       Stmts   Miss  Cover   Missing
+------------------------------------------------------------------------
+app.py                                        79     22    72%   63-66, 73-89, 93, 97, 102, 105
+tests\unit\test_error_counter.py               9      0   100%
+tests\unit\test_load_clubs.py                  8      0   100%
+tests\unit\test_load_competitions.py           8      0   100%
+tests\unit\test_purchase_places_logic.py      12      0   100%
+tests\unit\test_routes_book.py                12      0   100%
+tests\unit\test_routes_show_summary.py        13      0   100%
+------------------------------------------------------------------------
+TOTAL                                        141     22    84%
